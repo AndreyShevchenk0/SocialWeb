@@ -6,6 +6,7 @@ from.forms import LoginForm
 
 
 def user_login(request):
+    #global user  # разкоментить
     if request.method == 'POST':
         form = LoginForm(request.POST)
         if form.is_valid():
